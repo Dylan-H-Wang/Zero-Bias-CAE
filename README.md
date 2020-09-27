@@ -1,6 +1,6 @@
 # Zero-bias CAE 
 
-This repository implements code described in this [Paper](https://arxiv.org/abs/1903.06342).
+This repository implements code described in *Unsupervised Deep Transfer Feature Learning for Medical Image Classification* ([Paper Link](https://arxiv.org/abs/1903.06342)).
 
 ## Usage
 
