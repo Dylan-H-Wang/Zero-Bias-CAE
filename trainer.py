@@ -184,7 +184,7 @@ class CAETrainer:
 				"%Y-%m-%d %H:%M:%S"
 			)
 			elapsed = str(datetime.timedelta(seconds=(curr_time - start_time)))
-			log = "\n[{}] : Step {} elapsed [{}], Train Loss/Best: {:.4f}/{:.4f}, Test F1/Best: {:.4f}/{:.4f}".format(
+			log = "\n[{}] : Step {} elapsed [{}], Train Loss/Best: {:.4f}/{:.4f}".format(
 				curr_time_str, step + 1, elapsed, loss, best_loss
 			)
 			print(log)

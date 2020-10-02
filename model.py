@@ -68,9 +68,10 @@ class CAE(nn.Module):
 	def forward(self, x):
 		x = self.encoder(x)
 		x = self.relu1(x)
+		out_shape = x.shape
 		x, indices = self.pool1(x)
 
-		x = self.pool2(x, indices)
+		x = self.pool2(x, indices, out_shape)
 		x = self.decoder(x)
 		x = self.relu2(x)
 
